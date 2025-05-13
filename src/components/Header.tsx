@@ -49,7 +49,7 @@ const Header: React.FC = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Services', 'Contact'].map((item) => (
+            {['Accueil', 'A Propos', 'Services', 'Contact'].map((item) => (
               <Link
                 key={item}
                 to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}

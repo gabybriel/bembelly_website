@@ -42,7 +42,7 @@ const Header: React.FC = () => {
               alt="BEMBELLY & ASSOCIES" 
               className={`h-8 w-auto ${scrolled ? '' : 'brightness-0 invert'}`} 
             />
-            <span className={`font-serif text-xl font-bold ${scrolled ? 'text-primary-800' : 'text-danger'}`}>
+            <span className={`font-serif text-xl font-bold ${scrolled ? 'text-primary-800' : 'text-red'}`}>
               BEMBELLY & ASSOCIES
             </span>
           </Link>

@@ -30,7 +30,7 @@ const Home: React.FC = () => {
                 Conseillers juridiques de confiance depuis 1995
               </h2>
               <p className="text-secondary-700 mb-6 text-lg">
-                Chez <b className="text-danger">BEMBELLY & ASSOCIES</b>, nous allions expertise juridique et approche client. Notre équipe d'avocats expérimentés s'engage à vous proposer des solutions pratiques et adaptées à vos besoins spécifiques.
+                Chez <b className="text-red-600">BEMBELLY & ASSOCIES</b>, nous allions expertise juridique et approche client. Notre équipe d'avocats expérimentés s'engage à vous proposer des solutions pratiques et adaptées à vos besoins spécifiques.
               </p>
               <p className="text-secondary-700 mb-8">
                 Que vous soyez confronté à une transaction commerciale complexe, que vous traversiez un conflit familial ou que vous planifiiez l'avenir, nous vous fournissons les conseils et le soutien dont vous avez besoin pour atteindre vos objectifs.

@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Scale className="w-7 h-7 text-primary-500" />
-              <span className="font-serif text-xl font-bold">Robertson & Associates</span>
+              <span className="font-serif text-xl font-bold">BEMBELLY & ASSOCIES</span>
             </div>
             <p className="text-secondary-300 mb-4">
               Providing exceptional legal services with integrity and dedication since 1995.

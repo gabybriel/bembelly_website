@@ -4,22 +4,22 @@ export const testimonials: Testimonial[] = [
   {
     id: 1,
     name: 'Robert Thompson',
-    role: 'CEO, Thompson Enterprises',
-    content: 'The team at Robertson & Associates provided exceptional guidance during our company merger. Their attention to detail and strategic advice was invaluable.',
+    role: 'PDG, Thompson Enterprises',
+    content: 'L’équipe de Robertson & Associates a fourni un accompagnement exceptionnel lors de notre fusion d’entreprise. Leur rigueur et leurs conseils stratégiques ont été inestimables.',
     imageUrl: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 2,
     name: 'Laura Martinez',
-    role: 'Real Estate Developer',
-    content: 'I\'ve worked with many law firms, but none match the professionalism and expertise of Robertson & Associates. They made my complex property acquisition seamless.',
+    role: 'Promotrice Immobilière',
+    content: 'J’ai collaboré avec de nombreux cabinets, mais aucun n’égale le professionnalisme et l’expertise de Robertson & Associates. Ils ont rendu mon acquisition immobilière complexe fluide et sans accroc.',
     imageUrl: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 3,
     name: 'James Wilson',
-    role: 'Family Client',
-    content: 'During a difficult divorce, Sarah provided compassionate guidance while fiercely protecting my interests. I couldn\'t have asked for better representation.',
+    role: 'Client en Droit de la Famille',
+    content: 'Pendant une période difficile de divorce, Sarah a fait preuve d’une grande bienveillance tout en défendant farouchement mes intérêts. Je n’aurais pas pu rêver meilleure représentation.',
     imageUrl: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
 ];

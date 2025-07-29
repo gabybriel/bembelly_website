@@ -61,8 +61,8 @@ const Header: React.FC = () => {
                   item === "Accueil"
                     ? "/"
                     : item === "À propos"
-                    ? "/about"
-                    : `/${item.toLowerCase()}`
+                      ? "/about"
+                      : `/${item.toLowerCase()}`
                 }
                 className={`font-medium text-sm transition-colors hover:text-primary-500 ${
                   scrolled ? "text-secondary-800" : "text-white"
@@ -71,8 +71,8 @@ const Header: React.FC = () => {
                   (item === "Accueil"
                     ? "/"
                     : item === "À propos"
-                    ? "/about"
-                    : `/${item.toLowerCase()}`)
+                      ? "/about"
+                      : `/${item.toLowerCase()}`)
                     ? "border-b-2 border-primary-500"
                     : ""
                 }`}
@@ -111,16 +111,16 @@ const Header: React.FC = () => {
                 item === "Accueil"
                   ? "/"
                   : item === "À propos"
-                  ? "/about"
-                  : `/${item.toLowerCase()}`
+                    ? "/about"
+                    : `/${item.toLowerCase()}`
               }
               className={`block px-3 py-2 rounded-md text-base font-medium ${
                 location.pathname ===
                 (item === "Accueil"
                   ? "/"
                   : item === "À propos"
-                  ? "/about"
-                  : `/${item.toLowerCase()}`)
+                    ? "/about"
+                    : `/${item.toLowerCase()}`)
                   ? "bg-primary-100 text-primary-800"
                   : "text-secondary-800 hover:bg-primary-50 hover:text-primary-800"
               }`}

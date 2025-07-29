@@ -15,47 +15,45 @@ const Home: React.FC = () => {
     <div>
       {/* Hero Section */}
       <Hero
-        title="L'excellence juridique avec une touche personnelle"
-        subtitle="Des avocats dévoués qui s'engagent à protéger vos droits et à atteindre vos objectifs."
+        title="Des avocats à votre écoute, engagés pour vos droits"
+        subtitle="Chez BEMBELLY & ASSOCIÉS, nous croyons qu’un conseil juridique efficace commence par une vraie relation de confiance."
+        desc="Notre équipe accompagne chacun de ses clients avec expertise, clarté et humanité. Que vous soyez un particulier, une entreprise ou une institution, nous nous mobilisons pour défendre vos intérêts et construire des solutions pérennes."
         backgroundImage="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        height="large"
+        height="full"
       />
-
+      {/* Section Inncun 
+      <section>
+        <p>
+          Notre équipe accompagne chacun de ses clients avec expertise, clarté
+          et humanité. Que vous soyez un particulier, une entreprise ou une
+          institution, nous nous mobilisons pour défendre vos intérêts et
+          construire des solutions pérennes.
+        </p>
+      </section>
+*/}
       {/* Introduction Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-5">
             <div>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-900 mb-6">
-                Conseillers juridiques de confiance depuis 1995
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-secondary-900 mb-6">
+                <b className="text-red-600">BEMBELLY & ASSOCIÉS</b> — Vos
+                avocats-conseils pour un droit utile et humain
               </h2>
               <p className="text-secondary-700 mb-6 text-lg">
-                Chez <b className="text-red-600">BEMBELLY & ASSOCIES</b>, nous
-                allions expertise juridique et approche client. Notre équipe
-                d'avocats expérimentés s'engage à vous proposer des solutions
-                pratiques et adaptées à vos besoins spécifiques.
+                Un cabinet nouvellement ouvert, une expertise qui ne date pas
+                d’hier. Chez BEMBELLY & ASSOCIÉS, nous réunissons des
+                avocats-conseils issus de parcours juridiques variés, animés par
+                un même engagement : rendre le droit accessible, pertinent et
+                stratégique pour chacun de nos clients.
               </p>
               <p className="text-secondary-700 mb-8">
-                Que vous soyez confronté à une transaction commerciale complexe,
-                que vous traversiez un conflit familial ou que vous planifiiez
-                l'avenir, nous vous fournissons les conseils et le soutien dont
-                vous avez besoin pour atteindre vos objectifs.
+                Fondé par des juristes expérimentés ayant exercé en entreprise,
+                en cabinet et en juridiction, notre cabinet met au coeur de son
+                approche la compréhension fine des enjeux réels auxquels vous
+                êtes confronté·e.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  to="/about"
-                  className="inline-flex items-center px-6 py-3 bg-primary-700 text-white font-medium rounded-md hover:bg-primary-800 transition-colors"
-                >
-                  En Savoir plus
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center px-6 py-3 border border-secondary-300 text-secondary-900 font-medium rounded-md hover:bg-secondary-50 transition-colors"
-                >
-                  Contactez-nous
-                </Link>
-              </div>
+              <div className="flex flex-wrap gap-2"></div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="col-span-2 pl-0 sm:pl-12">
@@ -81,6 +79,69 @@ const Home: React.FC = () => {
               </div>
             </div>
           </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-secondary-700 text-lg items-center px-4">
+            <div>
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-secondary-900 mb-4">
+                Ce qui nous distingue
+              </h3>
+
+              <p>
+                <ul className="list-disc">
+                  <li>
+                    <b>Conseil juridique personnalisé</b> : nous ne livrons pas
+                    de réponses toutes faites, mais des solutions pensées pour
+                    vous, à partir d’une analyse rigoureuse de votre situation.
+                  </li>
+                  <li>
+                    <b>Relation de proximité </b>: ici, chaque client est écouté
+                    avec attention et respect. Nous croyons à une collaboration
+                    ouverte, transparente et durable.
+                  </li>
+                  <li>
+                    <b>Expertise transversale </b>: droit des affaires, droit
+                    social, droit de la famille, contentieux… Notre maîtrise de
+                    plusieurs branches du droit nous permet d’avoir une vision
+                    globale et stratégique.
+                  </li>
+                  <li>
+                    <b>Orientation vers l’action</b> : nous traduisons le droit
+                    en décisions utiles, compréhensibles, et applicables dans
+                    votre quotidien ou votre organisation.
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div className="px-4">
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-secondary-900 mb-4">
+                À qui nous nous adressons
+              </h3>
+              <p>
+                <ul className="list-disc">
+                  <li>
+                    <b>Entreprises et entrepreneurs</b>: sécurisation de vos
+                    contrats, structuration juridique, gestion des conflits
+                  </li>
+                  <li>
+                    <b>Particuliers</b> : accompagnement en droit de la famille,
+                    successions, litiges civils
+                  </li>
+                  <li>
+                    <b>Institutions et ONG </b>: conseil réglementaire,
+                    protection juridique, gouvernance
+                  </li>
+                </ul>
+                <br />
+                <b>
+                  <i>
+                    <span className="text-red-500">BEMBELLY & ASSOCIÉS</span>,
+                    un cabinet jeune aux racines solides, pensé pour bâtir avec
+                    vous une relation de confiance et une stratégie juridique
+                    qui a du sens
+                  </i>
+                </b>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -92,8 +153,13 @@ const Home: React.FC = () => {
               Pourquoi choisir BEMBELLY & ASSOCIES
             </h2>
             <p className="text-secondary-700 max-w-3xl mx-auto">
-              Notre engagement envers l’excellence et la satisfaction de nos
-              clients nous distingue.
+              Des avocats-conseils stratégiques au coeur de vos enjeux
+              juridiques. <br />
+              Notre cabinet s’illustre par une alliance rare entre expérience,
+              réactivité et engagement humain. Fondé par des avocats-conseils
+              aguerris, nous vous apportons une vision pratique et stratégique
+              du droit, adaptée aux dynamiques économiques et institutionnelles
+              d’aujourd’hui.
             </p>
           </div>
 
@@ -103,11 +169,13 @@ const Home: React.FC = () => {
                 <Users className="w-8 h-8 text-primary-700" />
               </div>
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
-                Équipe expérimentée
+                Une équipe d’avocats expérimentés
               </h3>
               <p className="text-secondary-600">
-                Nos avocats apportent des décennies d’expérience combinée dans
-                divers domaines de pratique.
+                Nos professionnels cumulent des décennies d’expertise dans des
+                environnements variés : cabinets internationaux, entreprises,
+                administration publique… Une richesse de parcours au service de
+                vos projets.
               </p>
             </div>
 
@@ -116,11 +184,13 @@ const Home: React.FC = () => {
                 <Award className="w-8 h-8 text-primary-700" />
               </div>
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
-                Service primé
+                Un service reconnu pour son excellence
               </h3>
               <p className="text-secondary-600">
-                Reconnu pour son excellence par ses pairs de l’industrie et ses
-                clients satisfaits.
+                Notre approche rigoureuse, centrée sur les résultats, est saluée
+                par nos clients et nos partenaires. La fidélité et les
+                témoignages de ceux que nous accompagnons sont notre meilleure
+                référence.
               </p>
             </div>
 
@@ -129,11 +199,12 @@ const Home: React.FC = () => {
                 <Clock className="w-8 h-8 text-primary-700" />
               </div>
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
-                Communication réactive
+                Une communication fluide et réactive
               </h3>
               <p className="text-secondary-600">
-                Nous privilégions une communication claire et rapide tout au
-                long de votre dossier.
+                Nous privilégions une relation transparente et directe. Chaque
+                dossier bénéficie d’un suivi attentif, avec des réponses
+                claires, rapides et ajustées à vos besoins.
               </p>
             </div>
           </div>
@@ -145,11 +216,12 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
-              Nos services juridiques
+              Droit des Sociétés & Gouvernance
             </h2>
             <p className="text-secondary-700 max-w-3xl mx-auto">
-              Nous proposons des solutions juridiques complètes dans un large
-              éventail de domaines de pratique.
+              Nous accompagnons les entreprises locales et internationales à
+              chaque étape de leur développement, en assurant sécurité
+              juridique, stratégie et conformité.
             </p>
           </div>
 
@@ -179,7 +251,8 @@ const Home: React.FC = () => {
               Ce que disent nos clients
             </h2>
             <p className="text-secondary-700 max-w-3xl mx-auto">
-              Lisez les témoignages de clients qui nous ont fait confiance pour leurs affaires juridiques.
+              Lisez les témoignages de clients qui nous ont fait confiance pour
+              leurs affaires juridiques.
             </p>
           </div>
 
@@ -198,7 +271,8 @@ const Home: React.FC = () => {
             Prêt à commencer ?
           </h2>
           <p className="text-primary-100 max-w-2xl mx-auto mb-8">
-            Planifiez une consultation avec notre équipe pour discuter de vos besoins juridiques et comment nous pouvons vous aider.
+            Planifiez une consultation avec notre équipe pour discuter de vos
+            besoins juridiques et comment nous pouvons vous aider.
           </p>
           <Link
             to="/contact"

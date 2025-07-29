@@ -11,6 +11,7 @@ const About: React.FC = () => {
       <Hero
         title="À propos de notre cabinet"
         subtitle="Rencontrez l'équipe dédiée à votre réussite"
+        desc=""
         backgroundImage="https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         height="medium"
       />
@@ -21,28 +22,50 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-900 mb-6">
-                Notre histoire
+                Notre Vision, Votre Avenir
               </h2>
               <p className="text-secondary-700 mb-6">
-                Fondé en 1995 par Amanda Robertson, notre cabinet est né d'une mission claire : offrir des services juridiques d'exception avec intégrité, dévouement et une approche personnalisée.
+                Après plus de vingt ans à marquer de son empreinte le paysage
+                juridique congolais, <b>Maître Roland BEMBELLY</b> a fait le
+                choix de fonder un cabinet à l'image de sa pratique : moderne,
+                rigoureux et résolument tourné vers l'avenir.
               </p>
               <p className="text-secondary-700 mb-6">
-                Au cours des 30 dernières années, nous sommes passés d'une petite pratique à une équipe juridique respectée, au service des particuliers et des entreprises de toute la région. Notre succès repose sur notre engagement envers nos clients et notre communauté.
+                <b className="text-primary-500">BEMBELLY & ASSOCIES</b> n'est
+                pas un cabinet comme les autres. Il est le fruit d'une carrière
+                riche, bâtie au contact des plus grands défis judiciaires et
+                économiques de la région. C'est la somme de cette expérience, de
+                ces succès et de cette expertise reconnue qui est aujourd'hui
+                mise au service d'une nouvelle structure, conçue pour être plus
+                agile, plus proche de ses clients et parfaitement adaptée aux
+                enjeux du monde des affaires contemporain.
               </p>
               <p className="text-secondary-700">
-                Aujourd'hui, Robertson & Associates continue de défendre les valeurs qui nous guident depuis le début : excellence dans la représentation juridique, pratique éthique et défense inébranlable des intérêts de nos clients.
+                Notre cabinet est né d'une ambition claire : offrir une
+                excellence juridique sur-mesure. Nous ne nous appuyons pas sur
+                une longue histoire, nous nous engageons à en écrire une
+                nouvelle avec vous.
               </p>
+              <br />
+              <b>
+                <i>
+                  Notre mission est de transformer notre héritage d'expertise en
+                  votre avantage stratégique.
+                </i>
+              </b>
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/5668865/pexels-photo-5668865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="images/local.jpeg"
                 alt="Bâtiment du cabinet d'avocats"
                 className="w-full h-auto rounded-lg shadow-md"
               />
 
               <div className="absolute -bottom-4 -left-4 bg-primary-700 text-white p-4 rounded shadow-md hidden md:block">
-                <p className="font-serif font-bold text-lg">30+ ans</p>
-                <p className="text-sm">D'excellence juridique</p>
+                <p className="font-serif font-bold text-lg">20+ ans</p>
+                <p className="text-sm">
+                  d'expérience, Tourné vers votre succès.
+                </p>
               </div>
             </div>
           </div>
@@ -57,11 +80,15 @@ const About: React.FC = () => {
               Nos valeurs fondamentales
             </h2>
             <p className="text-secondary-700 max-w-3xl mx-auto">
-              Ces principes guident chaque aspect de notre pratique et de nos relations avec les clients.
+              Ces principes sont le socle de notre identité et de notre
+              engagement envers chaque client. Ils traduisent une vision du
+              droit comme levier d’actions concrètes, adaptées aux réalités
+              africaines et tournées vers l’accomplissement des objectifs de nos
+              partenaires.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <div className="inline-flex items-center justify-center p-3 bg-primary-50 rounded-full mb-4">
                 <BookOpen className="w-8 h-8 text-primary-700" />
@@ -70,7 +97,10 @@ const About: React.FC = () => {
                 Excellence
               </h3>
               <p className="text-secondary-600">
-                Nous visons les plus hauts standards en matière de représentation juridique et de service client.
+                Nous visons l’excellence dans chaque dossier, en combinant
+                rigueur juridique, connaissance approfondie des contextes locaux
+                et engagement total. Notre exigence se reflète dans la qualité
+                de nos conseils et de notre accompagnement stratégique.
               </p>
             </div>
 
@@ -82,7 +112,10 @@ const About: React.FC = () => {
                 Intégrité
               </h3>
               <p className="text-secondary-600">
-                Nous respectons les normes éthiques les plus strictes dans tous les aspects de notre pratique.
+                La confiance est au coeur de notre pratique. Nous cultivons une
+                transparence totale et respectons les normes éthiques les plus
+                élevées, en défendant avec conviction les intérêts de nos
+                clients, dans le respect du droit et de la dignité.
               </p>
             </div>
 
@@ -94,7 +127,11 @@ const About: React.FC = () => {
                 Orientation client
               </h3>
               <p className="text-secondary-600">
-                Nous plaçons les besoins de nos clients au centre et adaptons notre approche à leur situation unique.
+                Nous plaçons nos clients au centre de toutes nos réflexions.
+                Chaque situation est unique, chaque objectif mérite une approche
+                sur mesure. Nous construisons des solutions juridiques
+                personnalisées, en phase avec les ambitions économiques,
+                sociales et culturelles de ceux que nous accompagnons.
               </p>
             </div>
 
@@ -106,7 +143,11 @@ const About: React.FC = () => {
                 Innovation
               </h3>
               <p className="text-secondary-600">
-                Nous adoptons des approches innovantes pour relever les défis juridiques complexes.
+                Dans un monde en transformation, nous croyons à l’agilité
+                juridique. Nous mobilisons des outils innovants, des méthodes
+                d’analyse stratégique et une veille constante pour relever les
+                défis complexes que posent les économies africaines
+                contemporaines
               </p>
             </div>
           </div>
@@ -121,7 +162,10 @@ const About: React.FC = () => {
               Rencontrez notre équipe
             </h2>
             <p className="text-secondary-700 max-w-3xl mx-auto">
-              Nos avocats expérimentés apportent une expertise diversifiée et un engagement commun envers l'excellence.
+              L’humain est au coeur de notre cabinet. Nos avocats sont bien plus
+              que des juristes : ce sont des partenaires engagés dans la
+              réalisation des ambitions économiques, sociales et idéologiques de
+              nos clients.
             </p>
           </div>
 

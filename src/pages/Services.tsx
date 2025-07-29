@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data/services";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Building, Check, User2Icon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Services: React.FC = () => {
@@ -11,6 +11,7 @@ const Services: React.FC = () => {
       {/* Section Hero */}
       <Hero
         title="Nos Services Juridiques"
+        desc=""
         subtitle="Des solutions juridiques complètes adaptées à vos besoins"
         backgroundImage="https://images.pexels.com/photos/5668481/pexels-photo-5668481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         height="medium"
@@ -21,11 +22,12 @@ const Services: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
-              Solutions Juridiques Complètes
+              Droit des Sociétés & Gouvernance
             </h2>
             <p className="text-secondary-700 max-w-3xl mx-auto">
-              Notre cabinet propose une large gamme de services juridiques pour
-              répondre aux besoins divers des particuliers et des entreprises.
+              Nous accompagnons les entreprises locales et internationales à
+              chaque étape de leur développement, en assurant sécurité
+              juridique, stratégie et conformité.
             </p>
           </div>
 
@@ -43,47 +45,66 @@ const Services: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-900 mb-6">
-                Services Juridiques aux Entreprises
+                Accompagnement Juridique – Entreprises & Particuliers
               </h2>
               <p className="text-secondary-700 mb-6">
-                Notre équipe en droit des affaires fournit un accompagnement
-                complet aux entreprises à chaque étape de leur croissance, des
-                startups aux sociétés établies. Nous comprenons les défis
-                complexes auxquels les entreprises sont confrontées et proposons
-                des solutions juridiques pratiques et axées sur les résultats.
+                Notre équipe en droit des affaires et droit privé propose un
+                accompagnement sur mesure aux entreprises, aux porteurs de
+                projets, mais aussi aux particuliers souhaitant sécuriser leurs
+                décisions juridiques.
               </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-primary-700 mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-secondary-700">
-                    Création d'entreprise et choix de la structure
+              <h3 className="font-bold mb-3">
+                Nous intervenons notamment pour :
+              </h3>
+              <div className="space-y-3 mb-8">
+                <div className="flex items-start">
+                  <Building className="w-5 h-5 text-primary-700 mr-2 mt-1 flex-shrink-0" />
+                  <span className="text-secondary-700 font-bold">
+                    Côté Entreprises :
                   </span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-primary-700 mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-secondary-700">
-                    Rédaction, révision et négociation de contrats
+                </div>
+                <ul className="items-start">
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-secondary-700">
+                      Création d’entreprises et choix de structure juridique adaptée
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-secondary-700">
+                      Rédaction, négociation et analyse de contrats commerciaux et partenariats
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-secondary-700">
+                      Fusions, acquisitions et transmission d’entreprises
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-secondary-700">
+                      Conseil en gouvernance et conformité réglementaire
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 mr-2 mt-1 flex-shrink-0" />
+                    <span className="text-secondary-700">
+                     Gestion des litiges commerciaux et représentation en justice
+                    </span>
+                  </li>
+                </ul>
+
+                <div className="flex items-start">
+                  <User2Icon className="w-5 h-5 text-primary-700 mr-2 mt-1 flex-shrink-0" />
+                  <span className="text-secondary-700 font-bold">
+                    Côté Particuliers :
                   </span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-primary-700 mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-secondary-700">
-                    Fusions et acquisitions
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-primary-700 mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-secondary-700">
-                    Gouvernance d'entreprise et conformité
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-primary-700 mr-2 mt-1 flex-shrink-0" />
-                  <span className="text-secondary-700">
-                    Contentieux et résolution de litiges
-                  </span>
-                </li>
-              </ul>
+                </div>
+
+                
+              </div>
               <Link
                 to="/contact"
                 className="inline-flex items-center px-6 py-3 bg-primary-700 text-white font-medium rounded-md hover:bg-primary-800 transition-colors"

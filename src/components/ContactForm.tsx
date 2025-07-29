@@ -80,7 +80,8 @@ const ContactForm: React.FC = () => {
             Merci !
           </h3>
           <p className="text-secondary-600">
-            Votre message a été envoyé. Nous vous répondrons dans les plus brefs délais.
+            Votre message a été envoyé. Nous vous répondrons dans les plus brefs
+            délais.
           </p>
         </div>
       ) : (
@@ -171,8 +172,12 @@ const ContactForm: React.FC = () => {
                 <option value="Litigation">Contentieux</option>
                 <option value="Real Estate">Immobilier</option>
                 <option value="Family Law">Droit de la famille</option>
-                <option value="Intellectual Property">Propriété intellectuelle</option>
-                <option value="Estate Planning">Planification successorale</option>
+                <option value="Intellectual Property">
+                  Propriété intellectuelle
+                </option>
+                <option value="Estate Planning">
+                  Planification successorale
+                </option>
                 <option value="Other">Autre</option>
               </select>
             </div>

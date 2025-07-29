@@ -10,6 +10,7 @@ const Contact: React.FC = () => {
       <Hero
         title="Contactez-nous"
         subtitle="Contactez notre équipe juridique"
+        desc=""
         backgroundImage="https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         height="small"
       />
@@ -23,7 +24,9 @@ const Contact: React.FC = () => {
                 Entrer en contact
               </h2>
               <p className="text-secondary-700 mb-8">
-                Nous sommes là pour répondre à tous vos besoins juridiques. Contactez-nous dès aujourd'hui pour planifier une consultation avec l'un de nos avocats expérimentés.
+                Nous sommes là pour répondre à tous vos besoins juridiques.
+                Contactez-nous dès aujourd'hui pour planifier une consultation
+                avec l'un de nos avocats expérimentés.
               </p>
 
               <div className="space-y-6 mb-8">
@@ -36,7 +39,7 @@ const Contact: React.FC = () => {
                       Notre bureau
                     </h3>
                     <p className="text-secondary-700">
-                     8e étage Tour Mayombe,
+                      8e étage Tour Mayombe,
                       <br />
                       243 Boulevard Charles De Gaule - Pointe-Noire
                     </p>
@@ -56,7 +59,7 @@ const Contact: React.FC = () => {
                         href="tel:+242057491517"
                         className="hover:text-primary-700 transition-colors"
                       >
-                        (+242) 05 749 15 17/ 06 688 62 79 
+                        (+242) 05 749 15 17/ 06 688 62 79
                       </a>
                     </p>
                   </div>

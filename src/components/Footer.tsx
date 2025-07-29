@@ -26,7 +26,8 @@ const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-secondary-300 mb-4">
-              Fournir des services juridiques d'exception avec intégrité et dévouement depuis 1995.
+              Fournir des services juridiques d'exception avec intégrité et
+              dévouement depuis 1995.
             </p>
             <div className="flex space-x-4">
               <a
@@ -59,16 +60,26 @@ const Footer: React.FC = () => {
               Liens rapides
             </h3>
             <ul className="space-y-2">
-              {["Accueil", "À propos", "Services", "Contact"].map((item, idx) => (
-                <li key={item}>
-                  <Link
-                    to={idx === 0 ? "/" : `/${item.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/ /g, '')}`}
-                    className="text-secondary-300 hover:text-primary-500 transition-colors"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              {["Accueil", "À propos", "Services", "Contact"].map(
+                (item, idx) => (
+                  <li key={item}>
+                    <Link
+                      to={
+                        idx === 0
+                          ? "/"
+                          : `/${item
+                              .normalize("NFD")
+                              .replace(/\p{Diacritic}/gu, "")
+                              .toLowerCase()
+                              .replace(/ /g, "")}`
+                      }
+                      className="text-secondary-300 hover:text-primary-500 transition-colors"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
 
@@ -106,8 +117,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-primary-500 mr-2 mt-0.5" />
                 <span className="text-secondary-300">
-                8e étage Tour Mayombe
-                - Pointe-Noire
+                  8e étage Tour Mayombe - Pointe-Noire
                 </span>
               </li>
               <li className="flex items-center">

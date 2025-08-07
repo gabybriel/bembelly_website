@@ -1,8 +1,8 @@
 import React from "react";
 import Hero from "../components/Hero";
-import TeamMemberCard from "../components/TeamMemberCard";
-import { teamMembers } from "../data/teamMembers";
 import { BookOpen, Users, Target, Award } from "lucide-react";
+import { equipe } from "../data/equipeData";
+import TeamMembreCard from "../components/TeamMemberCard";
 
 const About: React.FC = () => {
   return (
@@ -96,7 +96,7 @@ const About: React.FC = () => {
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
                 Excellence
               </h3>
-              <p className="text-secondary-600">
+              <p className="text-secondary-700">
                 Nous visons l’excellence dans chaque dossier, en combinant
                 rigueur juridique, connaissance approfondie des contextes locaux
                 et engagement total. Notre exigence se reflète dans la qualité
@@ -111,7 +111,7 @@ const About: React.FC = () => {
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
                 Intégrité
               </h3>
-              <p className="text-secondary-600">
+              <p className="text-secondary-700">
                 La confiance est au coeur de notre pratique. Nous cultivons une
                 transparence totale et respectons les normes éthiques les plus
                 élevées, en défendant avec conviction les intérêts de nos
@@ -126,7 +126,7 @@ const About: React.FC = () => {
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
                 Orientation client
               </h3>
-              <p className="text-secondary-600">
+              <p className="text-secondary-700">
                 Nous plaçons nos clients au centre de toutes nos réflexions.
                 Chaque situation est unique, chaque objectif mérite une approche
                 sur mesure. Nous construisons des solutions juridiques
@@ -142,7 +142,7 @@ const About: React.FC = () => {
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
                 Innovation
               </h3>
-              <p className="text-secondary-600">
+              <p className="text-secondary-700">
                 Dans un monde en transformation, nous croyons à l’agilité
                 juridique. Nous mobilisons des outils innovants, des méthodes
                 d’analyse stratégique et une veille constante pour relever les
@@ -169,11 +169,13 @@ const About: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member) => (
-              <TeamMemberCard key={member.id} member={member} />
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {equipe.map((membre) => (
+              <TeamMembreCard key={membre.id} membre={membre} />
             ))}
           </div>
+        </div>
         </div>
       </section>
 

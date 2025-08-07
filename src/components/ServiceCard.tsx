@@ -20,7 +20,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
       <h3 className="font-serif text-xl font-bold mb-3 text-secondary-900">
         {service.title}
       </h3>
-      <p className="text-secondary-600">{service.description}</p>
+      <p className="text-secondary-700">{service.description}</p>
     </div>
   );
 };

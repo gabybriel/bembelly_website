@@ -25,28 +25,28 @@ const Footer: React.FC = () => {
                 BEMBELLY & ASSOCIES
               </span>
             </div>
-            <p className="text-secondary-300 mb-4">
+            <p className="text-white mb-4">
               Fournir des services juridiques d'exception avec intégrité et
               dévouement depuis 1995.
             </p>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-secondary-300 hover:text-primary-500 transition-colors"
+                className="text-white hover:text-primary-500 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-secondary-300 hover:text-primary-500 transition-colors"
+                className="text-white hover:text-primary-500 transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-secondary-300 hover:text-primary-500 transition-colors"
+                className="text-white hover:text-primary-500 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
                               .toLowerCase()
                               .replace(/ /g, "")}`
                       }
-                      className="text-secondary-300 hover:text-primary-500 transition-colors"
+                      className="text-white hover:text-primary-500 transition-colors"
                     >
                       {item}
                     </Link>
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
                 <li key={service}>
                   <Link
                     to="/services"
-                    className="text-secondary-300 hover:text-primary-500 transition-colors"
+                    className="text-white hover:text-primary-500 transition-colors"
                   >
                     {service}
                   </Link>
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-primary-500 mr-2 mt-0.5" />
-                <span className="text-secondary-300">
+                <span className="text-white">
                   8e étage Tour Mayombe - Pointe-Noire
                 </span>
               </li>
@@ -124,7 +124,7 @@ const Footer: React.FC = () => {
                 <Phone className="w-5 h-5 text-primary-500 mr-2" />
                 <a
                   href="tel:+242057491517"
-                  className="text-secondary-300 hover:text-primary-500 transition-colors"
+                  className="text-white hover:text-primary-500 transition-colors"
                 >
                   (+242) 05 749 15 17/ 06 688 62 79
                 </a>
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
                 <Mail className="w-5 h-5 text-primary-500 mr-2" />
                 <a
                   href="mailto:contact@avocat-bembelly.com"
-                  className="text-secondary-300 hover:text-primary-500 transition-colors"
+                  className="text-white hover:text-primary-500 transition-colors"
                 >
                   contact@avocat-bembelly.com
                 </a>

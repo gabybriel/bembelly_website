@@ -5,34 +5,35 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#ffebed',
-          100: '#ffd1d6',
-          200: '#ffa3ad',
-          300: '#ff6d7a',
-          400: '#ff3b4a',
-          500: '#ff0a1f',
-          600: '#e60016',
-          700: '#bd0012',
-          800: '#9b0000',
-          900: '#800608',
-          950: '#4c0000',
+          50: '#e9e7fa',  // bleu très clair
+          100: '#c2bcf2',
+          200: '#9990ea',
+          300: '#7063e1',
+          400: '#4f41d6',
+          500: '#3421B0', // bleu principal
+          600: '#2d1e9d',
+          700: '#251a87',
+          800: '#1d156f',
+          900: '#140e51',
+          950: '#0d0938',
         },
         secondary: {
-          50: '#f7f7f7',
-          100: '#e3e3e3',
-          200: '#c8c8c8',
-          300: '#a4a4a4',
-          400: '#818181',
-          500: '#666666',
-          600: '#515151',
-          700: '#434343',
-          800: '#383838',
-          900: '#2e2e2e',
-          950: '#1a1a1a',
+          50: '#ffe5e8',  // rouge très clair
+          100: '#fbbec4',
+          200: '#f3929b',
+          300: '#eb6672',
+          400: '#e63e4e',
+          500: '#ff0a1f', // rouge principal
+          600: '#e60016',
+          700: '#595959',
+          800: '#8a000e',
+          900: '#2D2D2D',
+          950: '#434343',
         },
+        white: '#f5f5f5', // explicitement défini si tu veux l’utiliser comme `text-white`
       },
       fontFamily: {
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        serif: ['Poppins', 'Arial', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
     },

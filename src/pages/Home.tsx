@@ -1,9 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import ServiceCard from "../components/ServiceCard";
-import TestimonialCard from "../components/TestimonialCard";
 import { services } from "../data/services";
-import { testimonials } from "../data/testimonials";
 import { ArrowRight, Users, Award, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -29,8 +27,8 @@ const Home: React.FC = () => {
           institution, nous nous mobilisons pour défendre vos intérêts et
           construire des solutions pérennes.
         </p>
-      </section>
-*/}
+      </section>*/}
+
       {/* Introduction Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,7 +38,7 @@ const Home: React.FC = () => {
                 <b className="text-red-600">BEMBELLY & ASSOCIÉS</b> — Vos
                 avocats-conseils pour un droit utile et humain
               </h2>
-              <p className="text-secondary-700 mb-6 text-lg">
+              <p className="text-secondary-700 mb-6 text-lg font-serif">
                 Un cabinet nouvellement ouvert, une expertise qui ne date pas
                 d’hier. Chez BEMBELLY & ASSOCIÉS, nous réunissons des
                 avocats-conseils issus de parcours juridiques variés, animés par
@@ -56,25 +54,11 @@ const Home: React.FC = () => {
               <div className="flex flex-wrap gap-2"></div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-2 pl-0 sm:pl-12">
+              <div className="col-span-full pl-0 sm:pl-12">
                 <img
                   src="https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Law office"
-                  className="w-full h-64 object-cover rounded-lg shadow-md"
-                />
-              </div>
-              <div className="pl-4 sm:pl-20 -mt-12">
-                <img
-                  src="https://images.pexels.com/photos/5669626/pexels-photo-5669626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Lawyer working"
-                  className="w-full h-48 object-cover rounded-lg shadow-md"
-                />
-              </div>
-              <div className="pl-0 sm:pl-4 mt-8 sm:mt-0">
-                <img
-                  src="https://images.pexels.com/photos/5668765/pexels-photo-5668765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Legal consultation"
-                  className="w-full h-48 object-cover rounded-lg shadow-md"
+                  className="w-full h-80 object-cover rounded-lg shadow-md"
                 />
               </div>
             </div>
@@ -146,7 +130,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 bg-secondary-50">
+      <section className="py-16 bg-primary-100">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
@@ -171,7 +155,7 @@ const Home: React.FC = () => {
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
                 Une équipe d’avocats expérimentés
               </h3>
-              <p className="text-secondary-600">
+              <p className="text-secondary-700">
                 Nos professionnels cumulent des décennies d’expertise dans des
                 environnements variés : cabinets internationaux, entreprises,
                 administration publique… Une richesse de parcours au service de
@@ -186,7 +170,7 @@ const Home: React.FC = () => {
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
                 Un service reconnu pour son excellence
               </h3>
-              <p className="text-secondary-600">
+              <p className="text-secondary-700">
                 Notre approche rigoureuse, centrée sur les résultats, est saluée
                 par nos clients et nos partenaires. La fidélité et les
                 témoignages de ceux que nous accompagnons sont notre meilleure
@@ -201,7 +185,7 @@ const Home: React.FC = () => {
               <h3 className="font-serif text-xl font-bold text-secondary-900 mb-3">
                 Une communication fluide et réactive
               </h3>
-              <p className="text-secondary-600">
+              <p className="text-secondary-700">
                 Nous privilégions une relation transparente et directe. Chaque
                 dossier bénéficie d’un suivi attentif, avec des réponses
                 claires, rapides et ajustées à vos besoins.
@@ -248,19 +232,28 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
-              Ce que disent nos clients
+              Ce que nous partageons avec vous
             </h2>
             <p className="text-secondary-700 max-w-3xl mx-auto">
-              Lisez les témoignages de clients qui nous ont fait confiance pour
-              leurs affaires juridiques.
+              <i>
+                Publications, conférences, et engagements de Maitre BEMBELLY
+              </i>
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <p>
+              Chez BEMBELLY & ASSOCIÉS, notre engagement dépasse le cadre du
+              cabinet. Maitre BEMBELLY s’implique activement dans la diffusion
+              du savoir juridique, l’analyse des évolutions du droit, et le
+              dialogue avec les professionnels et les citoyens.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 

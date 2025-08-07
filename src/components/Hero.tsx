@@ -41,12 +41,12 @@ const Hero: React.FC<HeroProps> = ({
           {title}
         </h1>
         {subtitle && (
-          <p className="text-sm sm:text-xl md:text-xl text-secondary-100 max-w-auto mx-auto">
+          <p className="text-sm sm:text-xl md:text-xl text-white max-w-auto mx-auto">
             {subtitle}
           </p>
         )}
         {desc && (
-        <p className="text-sm sm:text-xl md:text-xl text-secondary-100 max-w-auto mx-auto">
+        <p className="text-sm sm:text-xl md:text-xl text-white max-w-auto mx-auto">
           {desc}
         </p>
         )}

@@ -40,25 +40,25 @@ const Header: React.FC = () => {
           <Link to="/" className="flex items-center space-x-2">
             {/* Logo depuis le dossier public */}
             <img
-              src="/images/favicons.png" // Chemin relatif depuis le dossier public
+              src="/images/logo2.png" // Chemin relatif depuis le dossier public
               alt="BEMBELLY & ASSOCIES"
-              className={`h-8 w-auto ${scrolled ? "" : "brightness-0 invert"}`}
+              className={`ml-7 h-24 w-auto ${scrolled ? "" : "brightness-0 invert"}`}
             />
 
-            <span
-              className={`font-serif text-xl font-bold text-red-600  ${scrolled ? "text-primary-800" : "text-white"}`}
+            {/* <span
+              className={`font-serif text-sm font-bold text-red-600  ${scrolled ? "text-primary-800" : "text-white"}`}
             >
-              BEMBELLY & ASSOCIES
-            </span>
+              BEMBELLY <br />& ASSOCIES
+            </span> */}
           </Link>
 
           {/* Navigation bureau */}
           <nav className="hidden md:flex space-x-8">
-            {["Accueil", "À propos", "Services", "Contact"].map((item) => (
+            {["Présentation", "À propos", "Expertise","Equipe","Actualité", "Contact"].map((item) => (
               <Link
                 key={item}
                 to={
-                  item === "Accueil"
+                  item === "Présentation"
                     ? "/"
                     : item === "À propos"
                       ? "/about"
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
                   scrolled ? "text-secondary-800" : "text-white"
                 } ${
                   location.pathname ===
-                  (item === "Accueil"
+                  (item === "Présentation"
                     ? "/"
                     : item === "À propos"
                       ? "/about"
@@ -104,11 +104,11 @@ const Header: React.FC = () => {
       {/* Navigation mobile */}
       <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-4 bg-white shadow-lg">
-          {["Accueil", "À propos", "Services", "Contact"].map((item) => (
+          {["Présentation", "À propos", "Expertise","Equipe","Actualité", "Contact"].map((item) => (
             <Link
               key={item}
               to={
-                item === "Accueil"
+                item === "Présentation"
                   ? "/"
                   : item === "À propos"
                     ? "/about"
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
               }
               className={`block px-3 py-2 rounded-md text-base font-medium ${
                 location.pathname ===
-                (item === "Accueil"
+                (item === "Présentation"
                   ? "/"
                   : item === "À propos"
                     ? "/about"

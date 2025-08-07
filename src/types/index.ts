@@ -1,9 +1,15 @@
-export interface TeamMember {
-  id: number;
-  name: string;
-  position: string;
+export interface TeamMembre {
+  id: string;
+  nom: string;
+  email: string;
+  poste: string;
   bio: string;
-  imageUrl: string;
+  adresse: string;
+  telephone: string;
+  photo: string;
+  expertises?: string[];
+  realisations?: string[];
+  citation?: string;
 }
 
 export interface Service {

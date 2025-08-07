@@ -17,7 +17,7 @@ export const services: Service[] = [
     id: 3,
     title: 'Investissement Étranger en Afrique Francophone',
     description: 'Nous sécurisons juridiquement les projets d’implantation et d’expansion des investisseurs étrangers, dès la phase amont.',
-    icon: 'Home',
+    icon: 'Globe',
   },
   {
     id: 4,

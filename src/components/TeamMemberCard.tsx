@@ -1,29 +1,32 @@
 import React from "react";
-import { TeamMember } from "../types";
+import { TeamMembre } from "../types";
+import { Link } from "react-router-dom";
 
-interface TeamMemberCardProps {
-  member: TeamMember;
+interface Props {
+  membre: TeamMembre;
 }
 
-const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member }) => {
+const TeamMembreCard: React.FC<Props> = ({ membre }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2">
-      <div className="h-64 overflow-hidden">
+    <div className="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100 hover:shadow-md transition-all duration-300">
+      <div className="mb-8 w-80 h-auto">
         <img
-          src={member.imageUrl}
-          alt={member.name}
-          className="w-full h-full object-cover"
+          src={membre.photo}
+          alt={membre.nom}
+          className="rounded-full w-full h-full object-cover border border-gray-200"
         />
       </div>
-      <div className="p-6">
-        <h3 className="font-serif text-xl font-bold text-secondary-900 mb-1">
-          {member.name}
-        </h3>
-        <p className="text-primary-700 mb-3">{member.position}</p>
-        <p className="text-secondary-600">{member.bio}</p>
-      </div>
+      <h3 className="text-lg font-bold text-gray-800">{membre.nom}</h3>
+      <p className="text-gray-500 text-sm">{membre.poste}</p>
+
+      <Link
+        to={`/equipe/${membre.id}`}
+        className="text-sm text-primary-600 hover:underline block mt-3"
+      >
+        Voir le profil →
+      </Link>
     </div>
   );
 };
 
-export default TeamMemberCard;
+export default TeamMembreCard;
